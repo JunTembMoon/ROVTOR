@@ -1,4 +1,6 @@
-# ROVTOR 1.1.5 Landing Page
+# ROVTOR
+
+ROVTOR WEB · 1.1.5 Landing Page
 
 GitHub Pages에 그대로 올리거나 `index.html`을 브라우저에서 열 수 있는 정적 랜딩 페이지입니다.
 
