@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="button-ripples.css">
   <link rel="stylesheet" href="nav-feedback.css">
   <link rel="stylesheet" href="legacy-excuses.css">
+  <link rel="stylesheet" href="mock-actions.css">
   <link rel="stylesheet" href="timeline-date.css">
 </head>
 <body>
@@ -55,7 +56,7 @@
     <section class="product section-shell" id="features">
       <div class="section-intro reveal"><p class="kicker">01 / THE EDITOR</p><h2>손은 키보드에.<br>생각은 <em>캐릭터에.</em></h2><p>색상 코드를 외우느라 흐름을 끊지 마세요. ROVTOR는 쓸데없는 단계를 걷어내고, 당신이 RP에만 집중하게 합니다.</p></div>
       <div class="app-window real-app reveal" aria-label="ROVTOR GTAW 스크린샷 채팅 에디터 예시">
-        <div class="real-top"><div class="real-brand">ROVTOR <span></span><small>GTAW 스크린샷 채팅 에디터</small></div><div class="real-actions"><button class="load-shot">스크린샷 불러오기</button><button>채팅 열기</button><button>PNG 내보내기</button></div></div>
+        <div class="real-top"><div class="real-brand">ROVTOR <span></span><small>GTAW 스크린샷 채팅 에디터</small></div><div class="real-actions"><button class="load-shot">스크린샷 불러오기</button><button data-mock-action="chat">채팅 열기</button><button data-mock-action="export">PNG 내보내기</button></div></div>
         <div class="app-body"><div class="canvas-panel"><p class="canvas-label">CANVAS PREVIEW</p><div class="screenshot-space"><div class="scene-glow"></div><div class="sample-chat"><p><b>Rovan Castillo:</b> 야, 여기 우리 구역이야. 사진은 왜 찍고 있어?</p><p><b>Rovan Ilio:</b> 진정해. 그냥 지나가던 길이었어.</p><p><b>Rovan Castillo:</b> 그 말, 여기선 별로 안 통하거든.</p><p><b>Rovan Ilio:</b> 알겠어. 카메라 내릴게. 문제 만들 생각 없어.</p></div><div class="image-empty"><i>⌑</i><span>스크린샷 불러오기를 눌러<br>이미지를 선택하세요.</span></div></div><span class="canvas-size">1920 × 1080</span></div>
           <aside class="control-panel"><p class="control-title">캔버스</p><label>레이아웃<select><option>1920 × 1080 (FHD)</option></select></label><div class="help-tip">이미지를 오른쪽 클릭 후 드래그하면 이동합니다.<br>마우스 휠로 확대/축소합니다.</div><p class="control-title">채팅 위치</p><label>X 위치 <output>0px</output><input type="range" value="0"></label><label>Y 위치 <output>70px</output><input type="range" value="18"></label><p class="control-title">글자</p><label>글꼴 크기 <output>22px</output><input type="range" value="24"></label><label>검은 외곽선 <output>5px</output><input type="range" value="38"></label><label class="check"><input type="checkbox" checked> 굵게</label><label class="check"><input type="checkbox" checked> 타임스탬프 보이기</label><p class="control-title">색상 코드</p><div class="code-help">어느 위치에서나 지원:<br>{#C2A2DA}<br>{C2A2DA}</div></aside>
         </div>
