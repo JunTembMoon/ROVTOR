@@ -17,7 +17,10 @@ if errorlevel 1 (
   if errorlevel 1 exit /b 1
 )
 
-git pull --rebase origin main
+git fetch origin main
+if errorlevel 1 exit /b 1
+
+git rebase origin/main
 if errorlevel 1 exit /b 1
 
 git push -u origin main
