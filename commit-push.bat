@@ -17,5 +17,8 @@ if errorlevel 1 (
   if errorlevel 1 exit /b 1
 )
 
+git pull --rebase origin main
+if errorlevel 1 exit /b 1
+
 git push -u origin main
 endlocal
