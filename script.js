@@ -1,7 +1,7 @@
 /* Edit these values when the real links are ready. */
 const CONFIG = {
   version: '1.1.5',
-  downloadUrl: 'https://github.com/JunTembMoon/ROVTOR/blob/main/files/ROVTOR%20Setup%201.1.5.exe',
+  downloadUrl: 'https://github.com/JunTembMoon/ROVTOR/raw/refs/heads/main/files/ROVTOR%20Setup%201.1.5.exe',
   githubUrl: 'https://github.com/JunTembMoon/ROVTOR',
   releaseNotes: [
     ['새로운 기능', '여기에 실제 1.1.5 변경사항을 입력하세요.'],
