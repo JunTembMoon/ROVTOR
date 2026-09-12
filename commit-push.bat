@@ -9,10 +9,13 @@ if "%commit_message%"=="" (
   exit /b 1
 )
 
-git add -A
-git commit -m "%commit_message%"
+git add -A -f
+git diff --cached --quiet
 
-if errorlevel 1 exit /b 1
+if errorlevel 1 (
+  git commit -m "%commit_message%"
+  if errorlevel 1 exit /b 1
+)
 
 git push -u origin main
 endlocal
