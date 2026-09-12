@@ -16,7 +16,7 @@ const $$ = (selector, parent = document) => [...parent.querySelectorAll(selector
 let lastFocus;
 
 function showToast(title, text) { $('#toastTitle').textContent = title; $('#toastText').textContent = text; $('.toast').classList.add('show'); clearTimeout(showToast.timer); showToast.timer = setTimeout(() => $('.toast').classList.remove('show'), 4600); }
-function validUrl(url) { return url && !url.includes('YOUR_'); }
+function validUrl(url) { return typeof url === 'string' && /^https:\/\/\S+$/.test(url); }
 function useLink(type) { const url = type === 'github' ? CONFIG.githubUrl : CONFIG.downloadUrl; if (validUrl(url)) window.location.href = url; else showToast(type === 'github' ? 'GitHub 링크 준비 중' : '다운로드 링크 준비 중', '링크가 곧 추가됩니다. 조금만 기다려주세요!'); }
 
 function modal(open) { const el = $('#launchModal'); if (open) { lastFocus = document.activeElement; el.classList.add('open'); document.body.style.overflow = 'hidden'; $('.modal-confirm').focus(); } else { el.classList.remove('open'); document.body.style.overflow = ''; lastFocus?.focus(); } }
