@@ -1,14 +1,13 @@
-/* Edit these values when the real links are ready. */
 const CONFIG = {
   version: '1.1.5',
   downloadUrl: 'https://github.com/JunTembMoon/ROVTOR/raw/refs/heads/main/files/ROVTOR%20Setup%201.1.5.exe',
   githubUrl: 'https://github.com/JunTembMoon/ROVTOR',
   releaseNotes: [
-    ['새로운 기능', '여기에 실제 1.1.5 변경사항을 입력하세요.'],
-    ['개선 사항', '여기에 실제 1.1.5 변경사항을 입력하세요.'],
-    ['편의성', '여기에 실제 1.1.5 변경사항을 입력하세요.'],
-    ['UI', '여기에 실제 1.1.5 변경사항을 입력하세요.'],
-    ['버그 수정', '여기에 실제 1.1.5 변경사항을 입력하세요.']
+    ['스크린샷 캔버스', '이미지 위에 채팅을 올리고, 보이는 자리에서 바로 다듬습니다.'],
+    ['복붙 해석기', '색상 코드와 행동 포맷을 붙이면, ROVTOR는 “알겠습니다”라고 합니다.'],
+    ['좌표 대신 흐름', '숫자 1px과 싸우는 시간을 줄이고 캐릭터에게 돌려드립니다.'],
+    ['WORLD MODE', 'SAMP 시절 고고학은 여기까지. GTA:WORLD급 작업 흐름으로 전환합니다.'],
+    ['LSRP+ 대응', '구식 클릭 지옥과의 호환성은 없습니다. 더 좋은 쪽으로 왔으니까요.']
   ]
 };
 
