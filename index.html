@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ROVTOR 1.1.5 — Modern RP Text Editing.">
+  <title>ROVTOR 1.1.5 — Modern RP Text Editing</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="overrides.css">
+  <link rel="stylesheet" href="layout-tuning.css">
+  <link rel="stylesheet" href="benchmark.css">
+  <link rel="stylesheet" href="easter-egg.css">
+  <link rel="stylesheet" href="demo-loop.css">
+  <link rel="stylesheet" href="theme-refresh.css">
+  <link rel="stylesheet" href="bro-link.css">
+  <link rel="stylesheet" href="timeline-date.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><i></i></div>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="ROVTOR 홈"><img src="assets/logo.svg" alt=""><span>ROVTOR</span></a>
+    <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span></button>
+    <nav aria-label="주 메뉴">
+      <a href="#why">왜 ROVTOR?</a><a href="#compare">비교</a><a href="#features">기능</a><a href="#developer">개발자</a>
+    </nav>
+    <div class="header-actions"><span class="version-pill">v1.1.5</span><button class="header-download js-download">다운로드 <b>↗</b></button></div>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-grid" aria-hidden="true"></div><div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="release-strip"><span class="pulse-dot"></span> ROVTOR 1.1.5 출시! 와우! <a href="#release">새 버전 보기 →</a></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow">VERSION 1.1.5 <span>•</span> GTA:WORLD RP TOOL</div>
+        <h1>텍스트 편집,<br><em>드디어</em> 빨라졌다.</h1>
+        <p class="hero-lede">복잡한 텍스트 에디터는 이제 그만.<br>GTA:World RP 텍스트 작성과 색상 코드 정리를 더 빠르고 직관적으로.</p>
+        <div class="hero-buttons"><button class="button primary js-download">ROVTOR 다운로드 <span>↓</span></button><a class="button ghost" href="#features">기능 살펴보기 <span>→</span></a></div>
+        <div class="proof"><span>NO LOGIN</span><span>NO SETUP HELL</span><span>JUST WRITE</span></div>
+      </div>
+      <div class="hero-aside"><div class="cursor-tag">YOUR RP, BUT FASTER <i></i></div><div class="float-code">/me <span>is finally editing.</span></div></div>
+    </section>
+
+    <section class="product section-shell" id="features">
+      <div class="section-intro reveal"><p class="kicker">01 / THE EDITOR</p><h2>손은 키보드에.<br>생각은 <em>캐릭터에.</em></h2><p>색상 코드를 외우느라 흐름을 끊지 마세요. ROVTOR는 쓸데없는 단계를 걷어내고, 당신이 RP에만 집중하게 합니다.</p></div>
+      <div class="app-window real-app reveal" aria-label="ROVTOR GTAW 스크린샷 채팅 에디터 예시">
+        <div class="real-top"><div class="real-brand">ROVTOR <span></span><small>GTAW 스크린샷 채팅 에디터</small></div><div class="real-actions"><button class="load-shot">스크린샷 불러오기</button><button>채팅 열기</button><button>PNG 내보내기</button></div></div>
+        <div class="app-body"><div class="canvas-panel"><p class="canvas-label">CANVAS PREVIEW</p><div class="screenshot-space"><div class="scene-glow"></div><div class="sample-chat"><p><b>Rovan Castillo:</b> 야, 여기 우리 구역이야. 사진은 왜 찍고 있어?</p><p><b>Rovan Ilio:</b> 진정해. 그냥 지나가던 길이었어.</p><p><b>Rovan Castillo:</b> 그 말, 여기선 별로 안 통하거든.</p><p><b>Rovan Ilio:</b> 알겠어. 카메라 내릴게. 문제 만들 생각 없어.</p></div><div class="image-empty"><i>⌑</i><span>스크린샷 불러오기를 눌러<br>이미지를 선택하세요.</span></div></div><span class="canvas-size">1920 × 1080</span></div>
+          <aside class="control-panel"><p class="control-title">캔버스</p><label>레이아웃<select><option>1920 × 1080 (FHD)</option></select></label><div class="help-tip">이미지를 오른쪽 클릭 후 드래그하면 이동합니다.<br>마우스 휠로 확대/축소합니다.</div><p class="control-title">채팅 위치</p><label>X 위치 <output>0px</output><input type="range" value="0"></label><label>Y 위치 <output>70px</output><input type="range" value="18"></label><p class="control-title">글자</p><label>글꼴 크기 <output>22px</output><input type="range" value="24"></label><label>검은 외곽선 <output>5px</output><input type="range" value="38"></label><label class="check"><input type="checkbox" checked> 굵게</label><label class="check"><input type="checkbox" checked> 타임스탬프 보이기</label><p class="control-title">색상 코드</p><div class="code-help">어느 위치에서나 지원:<br>{#C2A2DA}<br>{C2A2DA}</div></aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="legacy" id="why"><div class="section-shell">
+      <div class="legacy-top reveal"><p class="kicker">02 / A BRIEF HISTORY LESSON</p><h2>LSRP+가<br><em>무엇인가요?</em></h2><p>LSRP+는 과거 SA-MP / LSRP 계열에서 쓰이던 오래된 텍스트 에디터입니다. 정확한 개발 계보에는 여러 이야기가 있지만, 지금 기준으로 꽤 오래된 도구라는 점은 분명하죠.</p></div>
+      <div class="timeline reveal"><div class="year old">2016 <small class="legacy-label">LSRP+ / LEGACY...</small></div><div class="timeline-line"><i></i><span>약 10년</span></div><div class="year now">2026 <small class="nextgen-label">ROVTOR / NEXTGEN!!!</small></div><div class="lsrp-release-date"><span>LSRP+ 최초 배포일</span><strong>2015. 12. 23</strong></div></div>
+      <div class="legacy-punch reveal"><p class="decade-line"><strong>10년</strong>이면 스마트폰도 세대가 <em>몇 번은 바뀝니다.</em></p><h3>그런데 텍스트 에디터는<br>아직도 <span>그대로?</span></h3><div><b>구식입니다.</b><b>불편합니다.</b><b>그리고 지금은</b> <strong>더 나은 방법이 있습니다.</strong></div><p class="legacy-diss">LSRP+의 기억은 2015년에. ROVTOR의 workflow는 지금에.<br><strong>체감상 1,000배 낫다고 떠들고 싶습니다.</strong></p><p class="thats">그게 ROVTOR입니다. <i>↘</i></p></div>
+    </div></section>
+
+    <section class="workflow section-shell"><div class="workflow-heading reveal"><p class="kicker">03 / THE OLD ROUTE</p><h2>LSRP+를 써보셨다면<br>아실 겁니다.</h2></div><div class="flow-wrap reveal"><div class="old-flow"><p class="flow-label">THE OLD WAY <b>— ERROR MODE</b></p><ol><li>게스트로 로그인 <small>클릭.</small></li><li>에디터 진입 <small>또 클릭.</small></li><li>레이아웃 선택 <small>줄바꿈.</small></li><li>텍스트 작성 <small>다시 확인.</small></li><li>Y 좌표로 조정 <small>어라?</small></li><li>다시 수정 <small>또 다시.</small></li></ol><p class="rage-line">아니 왜 <b>*@*$&amp;!*#&amp;*!$</b><br>이걸 또 해야 하는데?</p></div><div class="flow-arrow">→</div><div class="new-flow"><p class="flow-label">ROVTOR WAY</p><ol><li><span>01</span> 입력</li><li><span>02</span> 색상 정리</li><li><span>03</span> 행동 코드 선택</li><li class="done"><span>04</span> 완료 <b>끝.</b></li></ol></div></div></section>
+
+    <section class="color-demo"><div class="section-shell"><div class="demo-header reveal"><p class="kicker">04 / COPY, PASTE, DONE</p><h2>색상 코드 정리?<br><em>복붙하면 바로 지원됩니다.</em></h2></div><div class="demo-stage reveal"><div class="demo-controls"><span>FORMAT</span><button class="demo-action active" data-demo="*행동 ">*행동</button><button class="demo-action" data-demo="/me ">/me</button><button class="demo-action" data-demo="/do ">/do</button><button class="demo-action" data-demo="/ame ">/ame</button><span>COLOR</span><button class="demo-color c-orange" data-demo-color="#ff9d4d"></button><button class="demo-color c-blue" data-demo-color="#78b8ff"></button><button class="demo-color c-green" data-demo-color="#7febae"></button></div><div class="demo-editor"><p class="mini-label">LIVE PREVIEW</p><div id="demoOutput"><b>[22:57:53]</b> <strong style="color:#ff9d4d">*행동</strong> reaches into his jacket.</div><i class="demo-caret"></i></div></div><div class="easy-callout reveal"><span class="cross">색상 코드 외우기</span><strong>그냥 복붙. 바로 지원. <i>→</i></strong></div></div></section>
+
+    <section class="comparison section-shell" id="compare"><div class="compare-title reveal"><p class="kicker">05 / LET'S BE HONEST</p><h2>ROVTOR <span>VS</span> LSRP+</h2></div><div class="compare-table reveal"><div class="compare-head"><span>비교 항목</span><b>LSRP+</b><strong>ROVTOR <i>✦</i></strong></div><div class="compare-row"><span>UI</span><b>구형</b><strong>직관적</strong></div><div class="compare-row"><span>Workflow</span><b>복잡</b><strong>빠름</strong></div><div class="compare-row"><span>색상 코드 관리</span><b>수동</b><strong>클릭 한 번</strong></div><div class="compare-row"><span>행동 포맷</span><b>찾아서 입력</b><strong>즉시 선택</strong></div><div class="compare-row"><span>학습 난이도</span><b>익숙해져야 함</b><strong>처음부터 쉬움</strong></div><div class="compare-row"><span>디자인</span><b>2016년 기반</b><strong>현대적</strong></div><div class="compare-row"><span>미리보기</span><b>제한적</b><strong>실시간</strong></div><div class="compare-row finale"><span>전체 경험</span><b>흠…</b><strong>아니 이게 되네? ✓</strong></div></div></section>
+
+    <section class="satisfaction"><div class="section-shell"><div class="sat-copy reveal"><p class="kicker">06 / ABSOLUTELY SCIENTIFIC*</p><h2>ROVTOR 공식(?)<br><em>만족도 조사</em></h2><p>※ 실제 통계가 아닌 ROVTOR식 유머입니다.</p><div class="sat-lines"><span>“LSRP+는 모든 연령대가 평점 1점을 남겼고”</span><strong>“ROVTOR는 0살부터 9999살까지 너무 좋다고 했습니다.”</strong></div></div><div class="meter reveal"><div class="meter-item bad"><div><span>LSRP+</span><b data-counter="0.001">0.001%</b></div><i><em></em></i></div><div class="meter-item good"><div><span>ROVTOR</span><b data-counter="99.99">99.99%</b></div><i><em></em></i></div></div><div class="benchmark reveal"><div class="benchmark-title"><p class="kicker">BONUS / DEFINITELY REAL BENCHMARK*</p><h3>ROVTOR <em>VS</em> LSRP+ <span>벤치마크</span></h3><small>※ 측정 장비: ROVTOR식 과장 측정기. 실제 성능 측정이 아닙니다.</small></div><div class="benchmark-row"><div class="benchmark-label">FPS</div><div class="benchmark-bars"><p class="bench-rovtor"><b>ROVTOR</b><i><em></em></i><strong>9999</strong></p><p class="bench-lsrp"><b>LSRP+</b><i><em></em></i><strong>0.1</strong></p></div></div><div class="benchmark-row time-row"><div class="benchmark-label">작업 시간</div><div class="benchmark-bars"><p class="bench-rovtor"><b>ROVTOR</b><i><em></em></i><strong>1초</strong></p><p class="bench-lsrp cosmic"><b>LSRP+</b><i><em></em></i><strong>우주의 탄생부터 현재까지<br><small>아직 작업중… 이분 처음 에디터의 아들의 아들의 아들의 아들의… 의 제곱의 제곱의 제곱의… 더하기 고글에 제곱을 32번 더…</small></strong></p></div></div></div></div></section>
+
+    <section class="ridiculous section-shell"><p class="kicker reveal">07 / A SMALL PROBLEM</p><h2 class="reveal">너무 좋아서<br><em>문제가 됩니다.</em></h2><div class="word-stack"><span>직관적이고</span><span>빠르고</span><span>편리하고</span><span>간단하고</span><span>색상 코드 정리까지 빠르고</span><span>처음 써도 바로 이해되고</span></div><p class="ridiculous-question reveal">아니 그래서 왜 아직<br><strong>ROVTOR 안 씀?</strong></p><p class="habit reveal">이 정도면 <strong>텍스트 에디터</strong>가 아니라 <em>생활 습관</em>입니다.</p></section>
+
+    <section class="release section-shell" id="release"><div class="release-title reveal"><p class="kicker">08 / CHANGELOG</p><h2>ROVTOR <em>1.1.5</em></h2><span>JUST RELEASED</span></div><div class="release-cards" id="releaseCards"></div></section>
+
+    <section class="developer-section section-shell" id="developer"><div class="dev-card reveal"><div class="dev-badge">R/</div><div class="dev-copy"><p class="kicker">09 / WHO MADE THIS?</p><h2>개발은<br><em>누가 했죠?</em></h2><p>이 프로그램은 GTA WORLD KR의 S/S VARRIO 38ST 팩션 멤버 중 한 명인 <b>rove</b>가 만들었습니다.</p><strong>나를 찬양하거라. <i>우하하.</i></strong></div><div class="signature">rove<small>developer, ROVTOR</small></div></div></section>
+
+    <section class="download section-shell" id="download"><div class="download-grid"></div><p class="kicker reveal">10 / GET STARTED</p><h2 class="reveal">다운로드<br>복잡해요?</h2><p class="download-no reveal">아뇨.</p><p class="download-copy reveal">클릭 따따따 끝.<br>유노 왓암세잉?</p><button class="download-button js-download reveal"><span>ROVTOR 1.1.5 다운로드</span><b>↓</b></button><p class="laugh reveal">우하하하하하하하하하</p><div class="download-links"><button class="js-github">GitHub ↗</button><a href="#release">릴리즈 노트 →</a></div><div class="bro-link reveal"><p>개발자가 LSRP+에 대해 혹평하는 걸 보고 싶으시다면 이 버튼을 누르세요.</p><a href="bro.html">극히 객관적인(?) 연구 보고서 보기 <span>→</span></a></div></section>
+  </main>
+  <footer><a class="brand" href="#home"><img src="assets/logo.svg" alt=""><span>ROVTOR</span></a><p>Modern RP Text Editing.<br>ROVTOR 1.1.5</p><div><button class="js-github">GitHub</button><button class="js-download">Download</button><a href="#developer">Credits</a></div></footer>
+  <button class="to-top" aria-label="페이지 맨 위로">↑</button>
+  <div class="toast" role="status" aria-live="polite"><div class="toast-mark">R/</div><div><b id="toastTitle">다운로드 준비 중</b><p id="toastText">링크가 곧 추가됩니다. 조금만 기다려주세요!</p></div><button class="toast-close" aria-label="알림 닫기">×</button></div>
+  <div class="rove-overlay" aria-hidden="true"><div class="party-spark one">✦</div><div class="party-spark two">✷</div><div class="party-spark three">✦</div><strong class="rove-word">rove</strong><div class="sorry-word">…<span>죄송합니다.</span></div></div>
+  <div class="modal-backdrop" id="launchModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="launch-modal"><button class="modal-close" aria-label="공지 닫기">×</button><div class="modal-icon">R/</div><p class="modal-mini">NEW RELEASE</p><h2 id="modalTitle">ROVTOR<br><em>1.1.5</em></h2><p>ROVTOR 1.1.5 출시! 와우!</p><small>새로운 버전이 출시되었습니다.</small><div><button class="modal-confirm">확인 <span>→</span></button><button class="modal-explore">1.1.5 살펴보기</button></div></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
