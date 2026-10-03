@@ -1,1 +1,1 @@
-.release{padding-top:118px}.release-cards{grid-template-columns:repeat(3,minmax(0,1fr))}.release-card{min-height:156px}@media(max-width:760px){.release{padding-top:90px}.release-cards{grid-template-columns:1fr 1fr}.release-card{min-height:145px}}
+.release{padding-top:118px}.release-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.release-card{min-height:156px}@media(max-width:760px){.release{padding-top:90px}.release-cards{grid-template-columns:1fr 1fr}.release-card{min-height:145px}}
