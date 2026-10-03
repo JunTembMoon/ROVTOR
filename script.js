@@ -1,6 +1,6 @@
 const CONFIG = {
   version: '1.4.3',
-  downloadUrl: 'https://github.com/JunTembMoon/ROVTOR/raw/refs/heads/main/files/ROVTOR%20Setup%201.1.5.exe',
+  downloadUrl: 'https://github.com/JunTembMoon/ROVTOR/raw/refs/heads/main/files/ROVTOR%20Setup%201.4.3.exe',
   githubUrl: 'https://github.com/JunTembMoon/ROVTOR',
   releaseNotes: [
     ['스크린샷 기능', '스크린샷을 불러와 실제 장면 위에서 채팅을 바로 배치합니다.'],
